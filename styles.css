@@ -1,0 +1,280 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* CABECERA */
+
+header {
+    background-color: #142b4a;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+/* SECCION PRINCIPAL */
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(120deg, #142b4a, #2563a6);
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #142b4a;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #0ea5e9;
+    color: white;
+}
+
+/* SECCION CASILLEROS */
+
+.casilleros {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.casilleros h2,
+.ventajas h2,
+.contacto h2 {
+    font-size: 30px;
+    color: #142b4a;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.tarjeta h3 {
+    color: #142b4a;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #666;
+    line-height: 1.5;
+    min-height: 70px;
+}
+
+.tarjeta h4 {
+    font-size: 24px;
+    color: #2563a6;
+    margin: 20px 0;
+}
+
+.icono {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.destacado {
+    border: 2px solid #38bdf8;
+}
+
+/* SECCION VENTAJAS */
+
+.ventajas {
+    background-color: #e4eef8;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.contenedor-ventajas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.ventaja {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.ventaja h3 {
+    color: #2563a6;
+    margin-bottom: 15px;
+}
+
+.ventaja p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* SECCION CONTACTO */
+
+.contacto {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contacto p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    font-size: 16px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* DISEÑO PARA MOVILES */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 50px 7%;
+    }
+
+    .contenedor-tarjetas,
+    .contenedor-ventajas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta,
+    .ventaja {
+        width: 100%;
+        max-width: 350px;
+    }
+}
