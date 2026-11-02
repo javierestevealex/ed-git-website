@@ -17,15 +17,15 @@ body {
     color: #333;
 }
 
- img {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
+    
+        img {
+    width: 350px !important;
+    max-width: 90% !important;
+    height: auto !important;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-        }
-    
+}
 
 /* CABECERA */
 
