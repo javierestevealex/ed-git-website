@@ -1,0 +1,17 @@
+# Compiled files
+*.class
+target/
+
+# IDE and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and logs
+.env
+*.log
+*.tmp
+
+# Exception: keep this file even if it matches *.log
+!important.log
